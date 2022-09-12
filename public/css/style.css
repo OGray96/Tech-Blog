@@ -1,0 +1,50 @@
+.post-account-page{
+    border-radius: 10px;
+    background-color: #D8D8D8;
+}
+
+.post-title-card{
+    padding-left: 4%;
+    font-size: 55px;
+}
+
+.post-title-card:hover{
+    cursor: pointer;
+    background-color: #A8A8A8;
+    border-radius: 10px;
+}
+
+.post-homepage{
+    border-radius: 10px;
+    background-color: #D8D8D8;
+}
+
+.post-homepage:hover{
+    cursor: pointer;
+    background-color: #A8A8A8;
+    border-radius: 10px;
+}
+
+.card-text-title{
+    padding-left: 4%;
+    font-size: 25px;
+}
+
+.card-text-content{
+    padding-left: 4%;
+    font-size: 15px;
+}
+
+.submit-post{
+    margin-top: 3%;
+}
+
+.update-post{
+    margin-top: 3%;
+}
+
+.delete-post{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+

@@ -1,0 +1,41 @@
+<!-- Loop over each object in the projects array -->
+<H1 class="dashboard-title">Your Posts</H1>
+
+<div>
+    {{#if logged_in}}
+        {{#if post}}
+        {{#each post as |post|}}
+        {{>post-detail}}
+        {{/each}}
+        {{else}}
+        <p>No posts to show</p>
+        {{/if}}
+        
+        <div class="post-container">
+        </div>
+       
+        <button class="new-post btn btn-primary">New Post</button>
+    {{else}}
+        <h3>Looks like you trying to access the dashboard without logging in! Log in <a href="/login">here</a> to get started</h3>
+    {{/if}}
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/new-post.js"></script>
+<script src="./js/edit-post.js"></script>
